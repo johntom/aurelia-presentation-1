@@ -129,48 +129,48 @@
                 </section>
                 <section>
                     <h2>I Chose Aurelia!</h2>
-                   
-                        <ul>
-                            <li>
-                                Never felt the ng2 message was strong nor coherent
-                            </li>
-                            <li>
-                                a nodejs engeneer suggested I look into jspm. Many meetups had mashed up angular ideas.
-                            </li>
-                            <li>
-                                AS long as I was going to change and the migration path from ng1 to ng2 was not clear, I chose what I considered the easier
-                                path. 
-                            </li>
-                        </ul>
-                   
+
+                    <ul>
+                        <li>
+                            Never felt the ng2 message was strong nor coherent
+                        </li>
+                        <li>
+                            a nodejs engeneer suggested I look into jspm. Many meetups had mashed up angular ideas.
+                        </li>
+                        <li>
+                            AS long as I was going to change and the migration path from ng1 to ng2 was not clear, I chose what I considered the easier
+                            path.
+                        </li>
+                    </ul>
+
                 </section>
                 <section>
                     <h2>Open Source is about sharing our experiences</h2>
                     <img width="50%" height="auto" data-src="images/sharing.jpg" alt="The Riddler" style="border: none; background: none; box-shadow: none;">
-                    
-                  
-                        <ul>
-                            <li>
-                                Looked a couple of other frameworks and felt Aurelia was the simpliest to transition
-                            </li>
-                           
-                            <li>
-                                Have used Aurelia sinde June 2015 and have >2 apps in production
-                            </li>
-                        </ul>
-                   
-                    
+
+
+                    <ul>
+                        <li>
+                            Looked a couple of other frameworks and felt Aurelia was the simpliest to transition
+                        </li>
+
+                        <li>
+                            Have used Aurelia sinde June 2015 and have >2 apps in production
+                        </li>
+                    </ul>
+
+
                 </section>
                 <section>
                     <h2>Why Did I Choose Aurelia?</h2>
                     <section>
-                    
+
                         <ul>
-                             <li>
-                               Was familiar with Rob Eisenberg's work from silverlight days.
+                            <li>
+                                Was familiar with Rob Eisenberg's work from silverlight days.
                             </li>
-                              <li>
-                               Loved the convention over configuration widely used in Sailsjs.
+                            <li>
+                                Loved the convention over configuration widely used in Sailsjs.
                             </li>
                             <li>
                                 Uses ES2015/2016, ensuring that we are building apps that won't be outdated in a year (or less)
@@ -188,63 +188,63 @@
                                 Now, let's start with the ES2015-2016 overview!
                             </li>
                         </ul>
-                    
-             </section>
 
-            <!-- BEGIN Sean: ES2015 Overview -->
-            <section>
-                <h2 style="color:grey">Why this Talk </h2>
-                <hr>
-                <h2>Learn ES2015, Quickly</h2>
-                <hr>
-                <h2 style="color:grey">Aurelia Overview</h2>
-                <hr>
-                <h2 style="color:grey">Framework Comparisons</h2>
-            </section>
-            <section>
+                    </section>
+                </section>
+                <!-- BEGIN Sean: ES2015 Overview -->
                 <section>
-                    <h2>Learn ES2015, Quickly!</h2>
-                    <h5>Also ES2016, sometimes called ES6/7.</h5>
-                    <p>
-                        JavaScript that doesn't suck :)
-                    </p>
+                    <h2 style="color:grey">Why this Talk </h2>
+                    <hr>
+                    <h2>Learn ES2015, Quickly</h2>
+                    <hr>
+                    <h2 style="color:grey">Aurelia Overview</h2>
+                    <hr>
+                    <h2 style="color:grey">Framework Comparisons</h2>
                 </section>
                 <section>
-                    <h2><code>var</code> is dead.<br/>Long live <code>let</code> &amp; <code>const</code></h2>
-                </section>
-                <section>
-                    <h3>Constants!</h3>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                    <section>
+                        <h2>Learn ES2015, Quickly!</h2>
+                        <h5>Also ES2016, sometimes called ES6/7.</h5>
+                        <p>
+                            JavaScript that doesn't suck :)
+                        </p>
+                    </section>
+                    <section>
+                        <h2><code>var</code> is dead.<br/>Long live <code>let</code> &amp; <code>const</code></h2>
+                    </section>
+                    <section>
+                        <h3>Constants!</h3>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 var pi = 3.141592653;
 // is now
 const pi = 3.141592653;
 						</code></pre>
-                </section>
-                <section>
-                    <h3>Block scoping!</h3>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h3>Block scoping!</h3>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 // this works. stop the insanity.
 for (var i=0; i<10; i++) {
 	console.log(i);
 }
 console.log(i);
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 // this does not work :)
 for (let i=0; i<10; i++) {
 	console.log(i);
 }
 console.log(i);
 					</code></pre>
-                </section>
-                <section>
-                    <h2>Arrow Notation</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2>Arrow Notation</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 [1,2,3].map(a => a+1);
 					  </code></pre>
-                    <div class="fragment">
-                        <h3>Lexical <code>this</code></h3>
-                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <div class="fragment">
+                            <h3>Lexical <code>this</code></h3>
+                            <pre class="presentation-code fragment"><code class="hljs" data-trim>
 function() {
 	var self = this;
 	self.name = 'Sean';
@@ -253,7 +253,7 @@ function() {
 	});
 }
 						  </code></pre>
-                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                            <pre class="presentation-code fragment"><code class="hljs" data-trim>
 function() {
 	this.name = 'Sean';
 	setInterval(() => {
@@ -262,13 +262,13 @@ function() {
 	});
 }
 						  </code></pre>
-                    </div>
-                </section>
-                <section>
-                    <h2>Classes<br/><small class="fragment">(finally)</small></h2>
-                </section>
-                <section>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Classes<br/><small class="fragment">(finally)</small></h2>
+                    </section>
+                    <section>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 class Person {
 	constructor(firstName, lastName) {
 		this.firstName = firstName;
@@ -279,9 +279,9 @@ class Person {
 	}
 }
 						</code></pre>
-                </section>
-                <section>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 class Developer extends Person {
 	// static method called with Developer.curse();
 	static curse() { return 'thou shalt forever be off by one...'; }
@@ -299,10 +299,10 @@ class Developer extends Person {
 	}
 }
 						</code></pre>
-                </section>
-                <section>
-                    <h2>Decorators</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2>Decorators</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 @isTestable(true)
 class Person {
 	constructor(firstName, lastName) {
@@ -315,106 +315,106 @@ class Person {
 	}
 }
 						</code></pre>
-                    <div class="fragment">
+                        <div class="fragment">
+                            <p>
+                                Decorators are annotations which allow you to define cross-cutting modifications to classes and methods.
+                            </p>
+                            <p>
+                                Decorators are executed at runtime.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
                         <p>
-                            Decorators are annotations which allow you to define cross-cutting modifications to classes and methods.
+                            Built-in classes like <code>Array</code>, <code>Date</code> and DOM <code>Element</code>s can
+                            be subclassed!
                         </p>
-                        <p>
-                            Decorators are executed at runtime.
+                    </section>
+                    <section>
+                        <h2>Modules</h2>
+                        <p class="fragment">
+                            Making module syntax a native part of the language!
                         </p>
-                    </div>
-                </section>
-                <section>
-                    <p>
-                        Built-in classes like <code>Array</code>, <code>Date</code> and DOM <code>Element</code>s can be
-                        subclassed!
-                    </p>
-                </section>
-                <section>
-                    <h2>Modules</h2>
-                    <p class="fragment">
-                        Making module syntax a native part of the language!
-                    </p>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 // lib/math.js
 export function sum(x, y) {
   return x + y;
 }
 export var pi = 3.141593;
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 // app.js
 import * as math from "lib/math";
 alert("2π = " + math.sum(math.pi, math.pi));
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 // otherApp.js
 import {sum, pi} from "lib/math";
 alert("2π = " + sum(pi, pi));
 						</code></pre>
-                </section>
-                <section>
-                    <h2>Template strings</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2>Template strings</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 /* before, in Person, we had this: */
 getFullName() {
 	return this.firstName + ' ' + this.lastName;
 }
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 /* now we can do this!*/
 getFullName() {
 	return `${this.firstName} ${this.lastName}`;
 }
 						</code></pre>
-                </section>
-                <section>
-                    <h2>for...of (Iterators)</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2>for...of (Iterators)</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 let a = ['a','b','c'];
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 for (let i in a) {
   console.log(i);
 }
 // prints 0 1 2 (which is pretty useless)
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 for (let i of a) {
 	console.log(prop);
 }
 // prints a b c :)
 						</code></pre>
-                    <p class="fragment">
-                        You can use the Iterator protocol in your own functions and classes to make anything iterable via <code>for...of</code>
-                    </p>
-                </section>
-                <section>
-                    <h2>Default, Rest and Spread</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <p class="fragment">
+                            You can use the Iterator protocol in your own functions and classes to make anything iterable via <code>for...of</code>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Default, Rest and Spread</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 function f(x, y=12) {
   // y is 12 if not passed (or passed as undefined)
   return x + y;
 }
 f(3) == 15
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 function f(x, ...y) {
   // y is an Array
   return x * y.length;
 }
 f(3, "hello", true) == 6
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
   return x + y + z;
 }
 // Pass each elem of array as argument
 f(...[1,2,3]) == 6
 						</code></pre>
-                </section>
-                <section>
-                    <h2>Destructuring</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2>Destructuring</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 let a, b, rest;
 
 [a, b] = [1, 2]
@@ -424,52 +424,52 @@ let a, b, rest;
 [a, b, ...rest] = [1, 2, 3, 4, 5]
 // a === 1, b === 2, rest === [3,4,5]
 						</code></pre>
-                </section>
-                <section>
-                    <h2>Destructuring<br/> <small>(multiple return values)</small></h2>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2>Destructuring<br/> <small>(multiple return values)</small></h2>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 function f() {
 	return [1,2];
 }
 [a, b] = f();
 						</code></pre>
-                </section>
-                <section>
-                    <h2><code>Set</code>s and <code>Map</code>s</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2><code>Set</code>s and <code>Map</code>s</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 const s = new Set();
 s.add("hello").add("goodbye").add("hello");
 s.size === 2;
 s.has("hello") === true;
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 const m = new Map();
 m.set("hello", 42);
 m.set("goodbye", 34);
 m.get("goodbye") == 34;
 						</code></pre>
-                </section>
-                <section>
-                    <h2><code>WeakMap</code>s and <code>WeakSet</code>s</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2><code>WeakMap</code>s and <code>WeakSet</code>s</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 const obj = {
 	// ...
 }
 						</code></pre>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 const wm = new WeakMap();
 wm.set(obj, 42); // store some metadata about obj.
 						</code></pre>
-                    <ul>
-                        <li class="fragment">Keys in a <code>WeakMap</code> must be objects</li>
-                        <li class="fragment"><code>WeakMap</code>s do not hold a strong reference to their keys.</li>
-                        <li class="fragment">Great way to store additional metadata on an object without polluting it.</li>
-                        <li class="fragment">WeakSets are similar</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Native <code>Promise</code>s</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <ul>
+                            <li class="fragment">Keys in a <code>WeakMap</code> must be objects</li>
+                            <li class="fragment"><code>WeakMap</code>s do not hold a strong reference to their keys.</li>
+                            <li class="fragment">Great way to store additional metadata on an object without polluting it.</li>
+                            <li class="fragment">WeakSets are similar</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Native <code>Promise</code>s</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 const p = new Promise((resolve, reject) => {
 	setTimeout(() => {
 		Math.random() < 0.5 ? resolve() : reject();
@@ -483,10 +483,10 @@ p.then(() => {
 	console.log('Rejected!');
 });
 						</code></pre>
-                </section>
-                <section>
-                    <h2>Generators</h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2>Generators</h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 function *getTime() {
 	while(true) {
 		yield Date.now();
@@ -497,11 +497,11 @@ console.log(timer.next()); // { value: 1454906307698, done: false }
 console.log(timer.next()); // { value: 1454906307710, done: false }
 console.log(timer.next()); // { value: 1454906307711, done: false }
 						</code></pre>
-                    <p class="fragment">You can also use the <code>for...of</code> loop with Generators :)</p>
-                </section>
-                <section>
-                    <h2>Generators<br/><small>two-way communication</small></h2>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <p class="fragment">You can also use the <code>for...of</code> loop with Generators :)</p>
+                    </section>
+                    <section>
+                        <h2>Generators<br/><small>two-way communication</small></h2>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 const summer = (function *sum() {
 	let sum = 0;
 	while(true) {
@@ -514,19 +514,19 @@ console.log(summer.next(1)); // { value: 1, done: false }
 console.log(summer.next(2)); // { value: 3, done: false }
 console.log(summer.next(3)); // { value: 6, done: false }
 						</code></pre>
-                    <p class="fragment"><small>Calling <code>next()</code> on a generator makes it pause execution. When the generator is restarted by another call to <code>next()</code>, the argument passed to <code>next()</code> replaces the yield expression.</small></p>
-                </section>
-                <section>
-                    <h2>Now for the crazy part...</h2>
-                </section>
-                <section>
-                    <h2>Generators</br><small>as a way to avoid callbacks</small></h2>
-                    <div class="fragment">
-                        <p>
-                            Let's say we have some asynchronous function
-                            <br/> returning a Promise:
-                        </p>
-                        <pre class="presentation-code"><code class="hljs" data-trim>
+                        <p class="fragment"><small>Calling <code>next()</code> on a generator makes it pause execution. When the generator is restarted by another call to <code>next()</code>, the argument passed to <code>next()</code> replaces the yield expression.</small></p>
+                    </section>
+                    <section>
+                        <h2>Now for the crazy part...</h2>
+                    </section>
+                    <section>
+                        <h2>Generators</br><small>as a way to avoid callbacks</small></h2>
+                        <div class="fragment">
+                            <p>
+                                Let's say we have some asynchronous function
+                                <br/> returning a Promise:
+                            </p>
+                            <pre class="presentation-code"><code class="hljs" data-trim>
 function longRunning(done) {
 	return new Promise((resolve) => {
 		setTimeout(() => {
@@ -535,53 +535,53 @@ function longRunning(done) {
 	});
 }
 							</code></pre>
-                    </div>
-                </section>
-                <section>
-                    <p>Normally, we'd use it like this:</p>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                        </div>
+                    </section>
+                    <section>
+                        <p>Normally, we'd use it like this:</p>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 longRunning.then((result) => {
 	console.log(result);
 })
 						</code></pre>
-                </section>
-                <section>
-                    <div>
-                        <p>But now we can do something like this...</p>
-                        <pre class="presentation-code"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <div>
+                            <p>But now we can do something like this...</p>
+                            <pre class="presentation-code"><code class="hljs" data-trim>
 const script = function *() {
 	let s = yield longRunning();
 	console.log(s);
 }();
 							</code></pre>
-                    </div>
-                    <div class="fragment">
-                        <p>With the assistance of this horrifying statement:</p>
-                        <pre class="presentation-code"><code class="hljs" data-trim>
+                        </div>
+                        <div class="fragment">
+                            <p>With the assistance of this horrifying statement:</p>
+                            <pre class="presentation-code"><code class="hljs" data-trim>
 script.next().value.then((r) => {
 	script.next(r);
 });
 							</code></pre>
-                    </div>
-                </section>
-                <section>
-                    <p>
-                        Treating async code like it's synchronous is awesome!
-                    </p>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                        </div>
+                    </section>
+                    <section>
+                        <p>
+                            Treating async code like it's synchronous is awesome!
+                        </p>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 const script = function *() {
 	let s = yield longRunning(); // so cool!
 	console.log(s);
 }();
 						</code></pre>
-                    <p class="fragment">
-                        So how do we avoid the horror?
-                    </p>
-                </section>
-                <section>
-                    <h2>ES2016 <code>async...await</code></h2>
-                    <div class="fragment">
-                        <pre class="presentation-code"><code class="hljs" data-trim>
+                        <p class="fragment">
+                            So how do we avoid the horror?
+                        </p>
+                    </section>
+                    <section>
+                        <h2>ES2016 <code>async...await</code></h2>
+                        <div class="fragment">
+                            <pre class="presentation-code"><code class="hljs" data-trim>
 const script = function *() {
 	let s = yield longRunning();
 	console.log(s);
@@ -590,25 +590,25 @@ script.next().value.then((r) => {
 	script.next(r);
 });
 							</code></pre>
-                    </div>
-                    <p class="fragment">
-                        becomes...
-                    </p>
-                    <div class="fragment">
-                        <pre class="presentation-code"><code class="hljs" data-trim>
+                        </div>
+                        <p class="fragment">
+                            becomes...
+                        </p>
+                        <div class="fragment">
+                            <pre class="presentation-code"><code class="hljs" data-trim>
 (async function script() {
 	let s = await longRunning(); // even cooler!
 	console.log(s);
 })();
 // no ugliness!
 							</code></pre>
-                    </div>
-                </section>
-                <section>
-                    <p>
-                        Or, more realistically...
-                    </p>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        </div>
+                    </section>
+                    <section>
+                        <p>
+                            Or, more realistically...
+                        </p>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 (async function script() {
 	try {
 		let s = await longRunning(); // sequential async
@@ -619,15 +619,15 @@ script.next().value.then((r) => {
 	}
 })();
 						</code></pre>
-                    <p class="fragment">
-                        Notice that good old-fashioned <code>try-catch</code> blocks work again!
-                    </p>
-                </section>
-                <section>
-                    <p>
-                        Or, for parallel async
-                    </p>
-                    <pre class="presentation-code fragment"><code class="hljs" data-trim>
+                        <p class="fragment">
+                            Notice that good old-fashioned <code>try-catch</code> blocks work again!
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Or, for parallel async
+                        </p>
+                        <pre class="presentation-code fragment"><code class="hljs" data-trim>
 (async function script() {
 	try {
 		let [s,t] = await Promise.all(
@@ -640,185 +640,186 @@ script.next().value.then((r) => {
 	}
 })();
 						</code></pre>
-                </section>
-                <section>
-                    <p>Almost all of this is available in Node.js natively, right now!</p>
-                    <p class="fragment">
-                        If you're not using it...start. My eyes will thank you.
-                    </p>
-                    <div class="fragment">
-                        <p>
-                            If you want to use this in the browser, you'll need to use a <strong>transpiler</strong> until
-                            the ES2015 and ES2016 specifications are implemented natively. Popular transpilers include:
+                    </section>
+                    <section>
+                        <p>Almost all of this is available in Node.js natively, right now!</p>
+                        <p class="fragment">
+                            If you're not using it...start. My eyes will thank you.
                         </p>
-                        <ul>
-                            <li><a href="http://babeljs.io/">Babel</a></li>
-                            <li><a href="https://github.com/google/traceur-compiler">Traceur</a></li>
-                        </ul>
-                    </div>
+                        <div class="fragment">
+                            <p>
+                                If you want to use this in the browser, you'll need to use a <strong>transpiler</strong>                                until the ES2015 and ES2016 specifications are implemented natively. Popular transpilers
+                                include:
+                            </p>
+                            <ul>
+                                <li><a href="http://babeljs.io/">Babel</a></li>
+                                <li><a href="https://github.com/google/traceur-compiler">Traceur</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>ES2015/ES2016<br/><small>Further reading</small></h2>
+                        <p>
+                            For more information, the <a href="http://babeljs.io/docs/learn-es2015/">Babel docs</a> are a
+                            good reference
+                        </p>
+                        <p>
+                            As is the Mozilla Developer Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript reference</a>
+                        </p>
+                        <div class="fragment">
+                            Stuff I didn't cover:
+                            <ul>
+                                <li>Symbols (new basic type, allowing private class members)</li>
+                                <li>Proxies</li>
+                                <li>New Math, Number, String and Object APIs</li>
+                                <li>Binary and Octal literals</li>
+                                <li>Reflection API</li>
+                                <li>Tail recursion</li>
+                            </ul>
+                        </div>
+                    </section>
                 </section>
-                <section>
-                    <h2>ES2015/ES2016<br/><small>Further reading</small></h2>
-                    <p>
-                        For more information, the <a href="http://babeljs.io/docs/learn-es2015/">Babel docs</a> are a good
-                        reference
-                    </p>
-                    <p>
-                        As is the Mozilla Developer Network <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript reference</a>
-                    </p>
-                    <div class="fragment">
-                        Stuff I didn't cover:
-                        <ul>
-                            <li>Symbols (new basic type, allowing private class members)</li>
-                            <li>Proxies</li>
-                            <li>New Math, Number, String and Object APIs</li>
-                            <li>Binary and Octal literals</li>
-                            <li>Reflection API</li>
-                            <li>Tail recursion</li>
-                        </ul>
-                    </div>
-                </section>
-            </section>
-            <!-- END Sean: ES6 Overview -->
+                <!-- END Sean: ES6 Overview -->
 
-            <!-- BEGIN Phil: Aurelia Overview -->
-            <section>
-                <h2 style="color:grey">Why this Talk </h2>
-                <hr>
-                <h2 style="color:grey">Learn ES2015, Quickly</h2>
-                <hr>
-                <h2>Aurelia Overview</h2>
-                <hr>
-                <h2 style="color:grey">Framework Comparisons</h2>
-            </section>
-            <section>
+                <!-- BEGIN Phil: Aurelia Overview -->
                 <section>
+                    <h2 style="color:grey">Why this Talk </h2>
+                    <hr>
+                    <h2 style="color:grey">Learn ES2015, Quickly</h2>
+                    <hr>
                     <h2>Aurelia Overview</h2>
-                    <h5>What is it?</h5>
-                    <h5>Why should you care?</h5>
+                    <hr>
+                    <h2 style="color:grey">Framework Comparisons</h2>
                 </section>
-
                 <section>
-                    <h2>Modern</h2>
-                    <p>
-                        <ul>
-                            <li class="fragment">
-                                <div>Modern javascript</div>
-                                <div><small>Write in ES6, ES7, Typescript or <em class="fragment">*</em>ES5</small></div>
-                                <small class="fragment"><em>* Presenter does not officially endorse use of ES5</em></small>
-                            </li>
-                            <li class="fragment">
-                                <div>Modern DOM</div>
-                                <small>Automatically polyfills older browser support</small>
-                            </li>
-                            <li class="fragment">
-                                <div>Modern Tooling</div>
-                                <div><small><em class="fragment">**</em>JSPM, Gulp, Karma, Protractor</small></div>
-                                <small class="fragment"><em>** Presenter does not officially endorse JSPM</em></small>
-                            </li>
-                            <li class="fragment">
-                                <div>Materializecss / Kendo-ui /Highcharts - integration</div>
-                                <div><small><em class="fragment">**https://github.com/aurelia-ui-toolkits/aurelia-materialize-bridge</em></small></div>
-                                <small class="fragment"><em>**https://github.com/aurelia-ui-toolkits/aurelia-kendoui-bridge</em></small>
-                            </li>
+                    <section>
+                        <h2>Aurelia Overview</h2>
+                        <h5>What is it?</h5>
+                        <h5>Why should you care?</h5>
+                    </section>
 
-                        </ul>
-                    </p>
+                    <section>
+                        <h2>Modern</h2>
+                        <p>
+                            <ul>
+                                <li class="fragment">
+                                    <div>Modern javascript</div>
+                                    <div><small>Write in ES6, ES7, Typescript or <em class="fragment">*</em>ES5</small></div>
+                                    <small class="fragment"><em>* Presenter does not officially endorse use of ES5</em></small>
+                                </li>
+                                <li class="fragment">
+                                    <div>Modern DOM</div>
+                                    <small>Automatically polyfills older browser support</small>
+                                </li>
+                                <li class="fragment">
+                                    <div>Modern Tooling</div>
+                                    <div><small><em class="fragment">**</em>JSPM, Gulp, Karma, Protractor</small></div>
+                                    <small class="fragment"><em>** Presenter does not officially endorse JSPM</em></small>
+                                </li>
+                                <li class="fragment">
+                                    <div>Materializecss / Kendo-ui /Highcharts - integration</div>
+                                    <div><small><em class="fragment">**https://github.com/aurelia-ui-toolkits/aurelia-materialize-bridge</em></small></div>
+                                    <small class="fragment"><em>**https://github.com/aurelia-ui-toolkits/aurelia-kendoui-bridge</em></small>
+                                </li>
+
+                            </ul>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Components!</h2>
+                        <p>
+                            <ul>
+                                <li>HTMLTemplateElement and ShadowDOM</li>
+                                <li>Aurelia Component Lifecycle</li>
+                                <li>Modularity</li>
+                            </ul>
+                        </p>
+
+                        <img width="80%" height="auto" class="fragment" data-src="images/happiness.gif" alt="Aurelia Logo" style="border: none; background: none; box-shadow: none;">
+                    </section>
+
+                    <section data-state="compete">
+                        <p class="david">
+                            <img src="images/durandal-logo.png" alt="Durandal logo"> <img src="images/aurelia-logo.png" alt="Aurelia logo">
+                        </p>
+                        <h2 class="fragment">How can it compete?</h2>
+                        <div class="goliath fragment">
+                            <img src="images/facebook-logo.png" alt="Facebook logo"> <img src="images/react-logo.svg" alt="React logo">
+                        </div>
+                        <div class="goliath fragment">
+                            <img src="images/google-logo.png" alt="Google logo"> <img src="images/angular-logo-light.png"
+                            alt="angular logo">
+                        </div>
+                    </section>
                 </section>
+                <!-- END Phil: Aurelia Overview -->
 
+                <!-- BEGIN Daniela: Aurelia vs Angular -->
                 <section>
-                    <h2>Components!</h2>
-                    <p>
-                        <ul>
-                            <li>HTMLTemplateElement and ShadowDOM</li>
-                            <li>Aurelia Component Lifecycle</li>
-                            <li>Modularity</li>
-                        </ul>
-                    </p>
-
-                    <img width="80%" height="auto" class="fragment" data-src="images/happiness.gif" alt="Aurelia Logo" style="border: none; background: none; box-shadow: none;">
+                    <h2 style="color:grey">Why this Talk </h2>
+                    <hr>
+                    <h2 style="color:grey">Learn ES2015, Quickly</h2>
+                    <hr>
+                    <h2 style="color:grey">Aurelia Overview</h2>
+                    <hr>
+                    <h2>Framework Comparisons</h2>
                 </section>
-
-                <section data-state="compete">
-                    <p class="david">
-                        <img src="images/durandal-logo.png" alt="Durandal logo"> <img src="images/aurelia-logo.png" alt="Aurelia logo">
-                    </p>
-                    <h2 class="fragment">How can it compete?</h2>
-                    <div class="goliath fragment">
-                        <img src="images/facebook-logo.png" alt="Facebook logo"> <img src="images/react-logo.svg" alt="React logo">
-                    </div>
-                    <div class="goliath fragment">
-                        <img src="images/google-logo.png" alt="Google logo"> <img src="images/angular-logo-light.png" alt="angular logo">
-                    </div>
-                </section>
-            </section>
-            <!-- END Phil: Aurelia Overview -->
-
-            <!-- BEGIN Daniela: Aurelia vs Angular -->
-            <section>
-                <h2 style="color:grey">Why this Talk </h2>
-                <hr>
-                <h2 style="color:grey">Learn ES2015, Quickly</h2>
-                <hr>
-                <h2 style="color:grey">Aurelia Overview</h2>
-                <hr>
-                <h2>Framework Comparisons</h2>
-            </section>
-            <section>
-                <section data-transition="fade" data-state="subsection-start" data-background="images/kids-boxing.png" data-background-size="80%">
-                    <h2 class="not-so-red">Aurelia vs. Angular 1.x</h2>
-                </section>
-
                 <section>
-                    <h2>&ldquo;Angular Script&rdquo;</h2>
-                    <p>
-                        <span class="fragment block">angular.module</span>
-                        <span class="fragment block">...controller</span>
-                    </p>
-                    <p>
-                        <span class="fragment block">...filter</span>
-                        <span class="fragment block">...factory</span>
-                    </p>
-                    <p>
-                        <span class="fragment block">...service</span>
-                        <span class="fragment block">...provider</span>
-                    </p>
-                </section>
+                    <section data-transition="fade" data-state="subsection-start" data-background="images/kids-boxing.png" data-background-size="80%">
+                        <h2 class="not-so-red">Aurelia vs. Angular 1.x</h2>
+                    </section>
 
-                <section data-state="just-es">
-                    <h2>Aurelia: Just classes</h2>
-                    <table>
-                        <tr class="fragment">
-                            <td>View Model
-                                <br>(Controller)</td>
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                    <section>
+                        <h2>&ldquo;Angular Script&rdquo;</h2>
+                        <p>
+                            <span class="fragment block">angular.module</span>
+                            <span class="fragment block">...controller</span>
+                        </p>
+                        <p>
+                            <span class="fragment block">...filter</span>
+                            <span class="fragment block">...factory</span>
+                        </p>
+                        <p>
+                            <span class="fragment block">...service</span>
+                            <span class="fragment block">...provider</span>
+                        </p>
+                    </section>
+
+                    <section data-state="just-es">
+                        <h2>Aurelia: Just classes</h2>
+                        <table>
+                            <tr class="fragment">
+                                <td>View Model
+                                    <br>(Controller)</td>
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 export class Users {
 	constructor() { ... }
 	activate() { ... }
 }
 									</code></pre>
-                            </td>
-                            <td>Service
-                                <br>(Factory)</td>
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                                </td>
+                                <td>Service
+                                    <br>(Factory)</td>
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 export class MyService {
 	constructor() { ... }
 	doSomething() { ... }
 }
 									</code></pre>
-                            </td>
-                        </tr>
-                        <tr class="fragment">
-                            <td colspan="4" class="message-emphasis">No framework specific code required!</td>
-                        </tr>
-                    </table>
-                </section>
+                                </td>
+                            </tr>
+                            <tr class="fragment">
+                                <td colspan="4" class="message-emphasis">No framework specific code required!</td>
+                            </tr>
+                        </table>
+                    </section>
 
-                <section>
-                    <h2>&ldquo;Angular Script&rdquo; vs. ES 2015</h2>
-                    <pre class="fragment presentation-code hack-col-left"><code class="hljs" data-trim>
+                    <section>
+                        <h2>&ldquo;Angular Script&rdquo; vs. ES 2015</h2>
+                        <pre class="fragment presentation-code hack-col-left"><code class="hljs" data-trim>
 angular.module('myApp', [ 'ngRoute' ])
 	.config(function ($routeProvider) {
     $routeProvider
@@ -836,7 +837,7 @@ angular.module('myApp', [ 'ngRoute' ])
   });
 &nbsp;
 						</code></pre>
-                    <pre class="fragment presentation-code hack-col-right"><code class="hljs" data-trim>
+                        <pre class="fragment presentation-code hack-col-right"><code class="hljs" data-trim>
 export class App {
 
   configureRouter(config, router) {
@@ -849,61 +850,61 @@ export class App {
 
 }
 							</code></pre>
-                </section>
+                    </section>
 
-                <section data-state="dependency-injection">
-                    <h2>Dependency Injection: Angular</h2>
-                    <pre class="fragment presentation-code"><code class="hljs" data-trim>
+                    <section data-state="dependency-injection">
+                        <h2>Dependency Injection: Angular</h2>
+                        <pre class="fragment presentation-code"><code class="hljs" data-trim>
 angular.module('myApp').controller('UserController',
 ['users', 'UserService', '$rootScope', 'toastr', '$state',
 function (users, UserService, $rootScope, toastr, $state) {
 		// ...
 }]);
 						</code></pre>
-                    <p class="fragment">Where did the dependencies come from??</p>
-                    <table>
-                        <tr class="fragment">
-                            <td><code>users</code></td>
-                            <td>Router resolve (data!)</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td><code>UserService</code></td>
-                            <td>Application factory</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td><code>$rootScope</code></td>
-                            <td>Angular core</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td><code>toastr</code></td>
-                            <td>Notification library</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td><code>$state</code></td>
-                            <td>UI Router (not Angular)</td>
-                        </tr>
-                    </table>
-                    <img class="fragment" src="images/magic.jpg" alt="magic" width="720" height="540">
-                </section>
+                        <p class="fragment">Where did the dependencies come from??</p>
+                        <table>
+                            <tr class="fragment">
+                                <td><code>users</code></td>
+                                <td>Router resolve (data!)</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><code>UserService</code></td>
+                                <td>Application factory</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><code>$rootScope</code></td>
+                                <td>Angular core</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><code>toastr</code></td>
+                                <td>Notification library</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td><code>$state</code></td>
+                                <td>UI Router (not Angular)</td>
+                            </tr>
+                        </table>
+                        <img class="fragment" src="images/magic.jpg" alt="magic" width="720" height="540">
+                    </section>
 
-                <section data-state="di-aurelia">
-                    <h2>Dependency Injection: Aurelia</h2>
-                    <!-- First code snippet -->
-                    <div class="fragment">
-                        <pre class="hack-col-left presentation-code "><code class="hljs" data-trim>
+                    <section data-state="di-aurelia">
+                        <h2>Dependency Injection: Aurelia</h2>
+                        <!-- First code snippet -->
+                        <div class="fragment">
+                            <pre class="hack-col-left presentation-code "><code class="hljs" data-trim>
 import {inject} from 'aurelia-framework';
 import {UserService} from 'users/user-service';
 import {EventAggregator} from
 	'aurelia-event-aggregator';
 import * as toastr from 'toastr';
 						</code></pre>
-                        <div class=" hack-col-right">
-                            <p>Injection service and dependencies imported.</p>
+                            <div class=" hack-col-right">
+                                <p>Injection service and dependencies imported.</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Second code snippet -->
-                    <div class="fragment">
-                        <pre class="hack-col-left presentation-code "><code class="hljs" data-trim>
+                        <!-- Second code snippet -->
+                        <div class="fragment">
+                            <pre class="hack-col-left presentation-code "><code class="hljs" data-trim>
 import {inject} from 'aurelia-framework';
 import {UserService} from 'users/user-service';
 import {EventAggregator} from
@@ -915,14 +916,14 @@ export class Users {
 
 }
 						</code></pre>
-                        <div class="hack-col-right">
-                            <p>Injection service and dependencies imported.</p>
-                            <p>Injection via decorator.</p>
+                            <div class="hack-col-right">
+                                <p>Injection service and dependencies imported.</p>
+                                <p>Injection via decorator.</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Third code snippet -->
-                    <div class="fragment">
-                        <pre class="hack-col-left presentation-code "><code class="hljs" data-trim>
+                        <!-- Third code snippet -->
+                        <div class="fragment">
+                            <pre class="hack-col-left presentation-code "><code class="hljs" data-trim>
 import {inject} from 'aurelia-framework';
 import {UserService} from 'users/user-service';
 import {EventAggregator} from
@@ -939,14 +940,14 @@ export class Users {
 	}
 }
 						</code></pre>
-                        <div class="hack-col-right">
-                            <p>Injection service and dependencies imported.</p>
-                            <p>Injection via decorator.</p>
-                            <p>Deps injected as constructor args.</p>
+                            <div class="hack-col-right">
+                                <p>Injection service and dependencies imported.</p>
+                                <p>Injection via decorator.</p>
+                                <p>Deps injected as constructor args.</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Fourth code snippet -->
-                    <pre class="hack-col-left presentation-code fragment"><code class="hljs" data-trim>
+                        <!-- Fourth code snippet -->
+                        <pre class="hack-col-left presentation-code fragment"><code class="hljs" data-trim>
 import {inject} from 'aurelia-framework';
 import {UserService} from 'users/user-service';
 import {EventAggregator} from
@@ -968,155 +969,155 @@ export class Users {
 	}
 }
 						</code></pre>
-                    <div class="fragment hack-col-right">
-                        <p>Injection service and dependencies imported.</p>
-                        <p>Injection via decorator.</p>
-                        <p>Deps injected as constructor args.</p>
-                        <p>
-                            Lifecycle activate method invoked with view state.
-                            <a href="https://github.com/aurelia/documentation/blob/master/English/docs.md#the-screen-activation-lifecycle">Screen Activation Lifecycle</a>
-                        </p>
-                    </div>
-                </section>
+                        <div class="fragment hack-col-right">
+                            <p>Injection service and dependencies imported.</p>
+                            <p>Injection via decorator.</p>
+                            <p>Deps injected as constructor args.</p>
+                            <p>
+                                Lifecycle activate method invoked with view state.
+                                <a href="https://github.com/aurelia/documentation/blob/master/English/docs.md#the-screen-activation-lifecycle">Screen Activation Lifecycle</a>
+                            </p>
+                        </div>
+                    </section>
 
-                <section data-state="angular-compare-db">
-                    <h2>Data Binding</h2>
-                    <table>
-                        <col width="50%">
+                    <section data-state="angular-compare-db">
+                        <h2>Data Binding</h2>
+                        <table>
                             <col width="50%">
-                                <tr>
-                                    <th><img src="images/aurelia-logo.png" alt="Aurelia logo"></th>
-                                    <th><img src="images/angular-logo-light.png" alt="Angular logo"></th>
-                                </tr>
-                                <tr>
-                                    <td class="fragment" data-fragment-index="1">Append <code>.bind</code> to any html or custom attribute.</td>
-                                    <td class="fragment" data-fragment-index="5">Uses Angular-specific custom attributes.</td>
-                                </tr>
-                                <tr>
-                                    <td class="fragment" data-fragment-index="2">Defaults to two-way for &lt;input&gt;, one-way for everything else.</td>
-                                    <td class="fragment" data-fragment-index="6">Two-way all the time, except for custom directives.</td>
-                                </tr>
-                                <tr>
-                                    <td class="fragment" data-fragment-index="3">Want more control? <code>.one-way</code>, <code>.two-way</code>, <code>.one-time</code>.</td>
-                                    <td class="fragment" data-fragment-index="7">Each binding adds a watcher on the <code>$scope</code> model.</td>
-                                </tr>
-                                <tr>
-                                    <td class="fragment" data-fragment-index="4"><a href="https://github.com/aurelia/documentation/blob/master/English/docs.md#adaptive-binding">Adaptive Binding</a>                                        picks optimal observation strategy &amp; minimizes dirty checking.</td>
-                                    <td class="fragment" data-fragment-index="8">Built in directives trigger digest cycle on scope model changes (dirty checking).</td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td class="fragment" data-fragment-index="5"><img src="images/aurelia-logo.png" alt="Aurelia logo"></td>
-                                    <td class="fragment" data-fragment-index="9">Recent angular meetup an excellent presentation by Yakov Fain .</td>
+                                <col width="50%">
+                                    <tr>
+                                        <th><img src="images/aurelia-logo.png" alt="Aurelia logo"></th>
+                                        <th><img src="images/angular-logo-light.png" alt="Angular logo"></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="fragment" data-fragment-index="1">Append <code>.bind</code> to any html or custom attribute.</td>
+                                        <td class="fragment" data-fragment-index="5">Uses Angular-specific custom attributes.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fragment" data-fragment-index="2">Defaults to two-way for &lt;input&gt;, one-way for everything else.</td>
+                                        <td class="fragment" data-fragment-index="6">Two-way all the time, except for custom directives.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fragment" data-fragment-index="3">Want more control? <code>.one-way</code>, <code>.two-way</code>, <code>.one-time</code>.</td>
+                                        <td class="fragment" data-fragment-index="7">Each binding adds a watcher on the <code>$scope</code> model.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fragment" data-fragment-index="4"><a href="https://github.com/aurelia/documentation/blob/master/English/docs.md#adaptive-binding">Adaptive Binding</a>                                            picks optimal observation strategy &amp; minimizes dirty checking.</td>
+                                        <td class="fragment" data-fragment-index="8">Built in directives trigger digest cycle on scope model changes (dirty checking).</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td class="fragment" data-fragment-index="5"><img src="images/aurelia-logo.png" alt="Aurelia logo"></td>
+                                        <td class="fragment" data-fragment-index="9">Recent angular meetup an excellent presentation by Yakov Fain .</td>
 
-                                </tr>
-                    </table>
-                </section>
+                                    </tr>
+                        </table>
+                    </section>
 
-                <section data-state="angular-compare-db-code">
-                    <h2>Data Binding Examples</h2>
-                    <table>
-                        <tr>
-                            <th><img src="images/aurelia-logo.png" alt="Aurelia logo"></th>
-                            <th><img src="images/angular-logo-light.png" alt="Angular logo"></th>
-                        </tr>
-                        <!-- Example 1: Input binding -->
-                        <tr class="fragment">
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                    <section data-state="angular-compare-db-code">
+                        <h2>Data Binding Examples</h2>
+                        <table>
+                            <tr>
+                                <th><img src="images/aurelia-logo.png" alt="Aurelia logo"></th>
+                                <th><img src="images/angular-logo-light.png" alt="Angular logo"></th>
+                            </tr>
+                            <!-- Example 1: Input binding -->
+                            <tr class="fragment">
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <input type="text" value.bind="user.name">
 									</code></pre>
-                            </td>
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                                </td>
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <input type="text" ng-model="user.name">
 									</code></pre>
-                            </td>
-                        </tr>
-                        <!-- Example 2: Class binding -->
-                        <tr class="fragment">
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                                </td>
+                            </tr>
+                            <!-- Example 2: Class binding -->
+                            <tr class="fragment">
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <div class.bind="row.isActive ? 'active' : ''">
 	some content
 </div>
 									</code></pre>
-                            </td>
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                                </td>
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <div ng-class="row.isActive ? 'active' : ''">
 	some content
 </div>
 									</code></pre>
-                            </td>
-                        </tr>
-                        <!-- Example 3: Binding to custom attribute 'show' -->
-                        <tr class="fragment">
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                                </td>
+                            </tr>
+                            <!-- Example 3: Binding to custom attribute 'show' -->
+                            <tr class="fragment">
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <div show.bind="hasError" class="error">
 	${err.message}
 </div>
 									</code></pre>
-                            </td>
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                                </td>
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <div ng-show="hasError" class="error">
 	{{ err.message }}
 </div>
 									</code></pre>
-                            </td>
-                        </tr>
-                        <!-- Example 4: Explicit two-way binding for custom element -->
-                        <tr class="fragment">
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                                </td>
+                            </tr>
+                            <!-- Example 4: Explicit two-way binding for custom element -->
+                            <tr class="fragment">
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <my-datepicker data.two-way="user.dob">
 </my-datepicker>
 									</code></pre>
-                            </td>
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                                </td>
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <my-datepicker data="user.dob">
 </my-datepicker>
 								</code></pre>
-                            </td>
-                        </tr>
-                    </table>
-                </section>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
 
-                <section data-state="dom-manipulation">
-                    <h3>HMTL Customization</h3>
-                    <table class="fragment">
-                        <tr>
-                            <th align="center"><img src="images/aurelia-logo.png" alt="Aurelia logo"></th>
-                            <th align="center"><img src="images/angular-logo-light.png" alt="Angular logo"></th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                    <section data-state="dom-manipulation">
+                        <h3>HMTL Customization</h3>
+                        <table class="fragment">
+                            <tr>
+                                <th align="center"><img src="images/aurelia-logo.png" alt="Aurelia logo"></th>
+                                <th align="center"><img src="images/angular-logo-light.png" alt="Angular logo"></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <require from="../components/mydatepicker">
 </require>
 &nbsp;
 <my-datepicker data.two-way="user.dob">
 </my-datepicker>
 									</code></pre>
-                            </td>
-                            <td>
-                                <pre class="presentation-code"><code class="hljs" data-trim>
+                                </td>
+                                <td>
+                                    <pre class="presentation-code"><code class="hljs" data-trim>
 <my-datepicker
 data="user.dob">
 </my-datepicker>
 									</code></pre>
-                            </td>
-                        </tr>
-                    </table>
-                    <p class="fragment">Usage looks similar, devil is in the implementation details...</p>
-                </section>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="fragment">Usage looks similar, devil is in the implementation details...</p>
+                    </section>
 
-                <section data-state="ang-dir">
-                    <h2>Angular Directive</h2>
-                    <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
+                    <section data-state="ang-dir">
+                        <h2>Angular Directive</h2>
+                        <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
 angular.module('myApp').directive('myDatepicker',
 	function () {
     return {
@@ -1134,18 +1135,18 @@ angular.module('myApp').directive('myDatepicker',
     };
   });
 						</code></pre>
-                    <div class="hack-col-right">
-                        <p class="fragment">Configure template.</p>
-                        <p class="fragment"><code>restrict</code>&nbsp;&nbsp;specifies 'E' or 'A' for element or attribute.</p>
-                        <p class="fragment">Isolate scope, o.w. can access parent!</p>
-                        <p class="fragment">'=' indicates two-way data binding, '@' for one way, '&' for binding functions.</p>
-                        <p class="fragment">Controller function runs first, then Link function.</p>
-                    </div>
-                </section>
+                        <div class="hack-col-right">
+                            <p class="fragment">Configure template.</p>
+                            <p class="fragment"><code>restrict</code>&nbsp;&nbsp;specifies 'E' or 'A' for element or attribute.</p>
+                            <p class="fragment">Isolate scope, o.w. can access parent!</p>
+                            <p class="fragment">'=' indicates two-way data binding, '@' for one way, '&' for binding functions.</p>
+                            <p class="fragment">Controller function runs first, then Link function.</p>
+                        </div>
+                    </section>
 
-                <section>
-                    <h2>Directive: Template</h2>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                    <section>
+                        <h2>Directive: Template</h2>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 <!-- views/mydatepicker.html -->
 <div class="input-group date">
   <input type="text" class="form-control">
@@ -1154,11 +1155,11 @@ angular.module('myApp').directive('myDatepicker',
   </div>
 </div>
 						</code></pre>
-                </section>
+                    </section>
 
-                <section data-state="ang-dir">
-                    <h2>Directive: Datepicker</h2>
-                    <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
+                    <section data-state="ang-dir">
+                        <h2>Directive: Datepicker</h2>
+                        <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
 link: function(scope, element) {
 	// Initialize datepicker
 	element.find('.date').datepicker();
@@ -1172,10 +1173,10 @@ link: function(scope, element) {
 
 }
 						</code></pre>
-                    <div class="hack-col-right">
-                        <p class="fragment">Element will not update because event happened outside of <span class="emphasis emphasis-alternate">Angular&rsquo;s context</span>.</p>
-                    </div>
-                    <pre class="fragment presentation-code hack-col-left"><code class="hljs" data-trim>
+                        <div class="hack-col-right">
+                            <p class="fragment">Element will not update because event happened outside of <span class="emphasis emphasis-alternate">Angular&rsquo;s context</span>.</p>
+                        </div>
+                        <pre class="fragment presentation-code hack-col-left"><code class="hljs" data-trim>
 link: function(scope, element) {
 	// Initialize datepicker
 	element.datepicker();
@@ -1190,15 +1191,15 @@ link: function(scope, element) {
 
 }
 						</code></pre>
-                    <div class="hack-col-right" style="top: 180%;">
-                        <p class="fragment">Run update inside <code>scope.$apply</code> to trigger a digest cycle.</p>
-                        <p class="fragment">Need to understand framework internals to make this work.</p>
-                    </div>
-                </section>
+                        <div class="hack-col-right" style="top: 180%;">
+                            <p class="fragment">Run update inside <code>scope.$apply</code> to trigger a digest cycle.</p>
+                            <p class="fragment">Need to understand framework internals to make this work.</p>
+                        </div>
+                    </section>
 
-                <section data-state="ang-dir">
-                    <h2>Directive: Watch</h2>
-                    <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
+                    <section data-state="ang-dir">
+                        <h2>Directive: Watch</h2>
+                        <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
 link: function(scope, element) {
 	// ...
 
@@ -1209,15 +1210,15 @@ link: function(scope, element) {
 
 }
 						</code></pre>
-                    <div class="hack-col-right">
-                        <p>To have datepicker respond to model changes, must add <code>scope.$watch</code> to add to list of
-                            watchers evaluated in digest cycle.</p>
-                    </div>
-                </section>
+                        <div class="hack-col-right">
+                            <p>To have datepicker respond to model changes, must add <code>scope.$watch</code> to add to list
+                                of watchers evaluated in digest cycle.</p>
+                        </div>
+                    </section>
 
-                <section data-state="ang-dir">
-                    <h2>Aurelia Custom Element</h2>
-                    <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
+                    <section data-state="ang-dir">
+                        <h2>Aurelia Custom Element</h2>
+                        <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
 import {inject, bindable} from 'aurelia-framework';
 import 'bootstrap-datepicker/js/bootstrap-datepicker';
 
@@ -1233,17 +1234,17 @@ export class MyDatepickerCustomElement {
 
 }
 					</code></pre>
-                    <div class="hack-col-right">
-                        <p class="fragment">Naming convention marks this as custom element.</p>
-                        <p class="fragment">Bindable decorator for data binding.</p>
-                        <p class="fragment">View template loaded by convention.</p>
-                        <p class="fragment"><code>bind</code> and <code>unbind</code> are <a href="http://aurelia.io/docs.html#/aurelia/framework/1.0.0-beta.1.1.1/doc/article/creating-components/3">Component Lifecycle</a>                            methods.</p>
-                    </div>
-                </section>
+                        <div class="hack-col-right">
+                            <p class="fragment">Naming convention marks this as custom element.</p>
+                            <p class="fragment">Bindable decorator for data binding.</p>
+                            <p class="fragment">View template loaded by convention.</p>
+                            <p class="fragment"><code>bind</code> and <code>unbind</code> are <a href="http://aurelia.io/docs.html#/aurelia/framework/1.0.0-beta.1.1.1/doc/article/creating-components/3">Component Lifecycle</a>                                methods.</p>
+                        </div>
+                    </section>
 
-                <section>
-                    <h2>Custom Element: Template</h2>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                    <section>
+                        <h2>Custom Element: Template</h2>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 <!-- my-datepicker.html -->
 <template>
 	<div class="input-group date">
@@ -1254,11 +1255,11 @@ export class MyDatepickerCustomElement {
 	</div>
 </template>
 					</code></pre>
-                </section>
+                    </section>
 
-                <section data-state="ang-dir">
-                    <h2>Custom Element: Datepicker</h2>
-                    <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
+                    <section data-state="ang-dir">
+                        <h2>Custom Element: Datepicker</h2>
+                        <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
 bind() {
 	// Find input element
 	this.selector = $(this.element).find('.date');
@@ -1273,15 +1274,15 @@ bind() {
 
 }
 					</code></pre>
-                    <div class="hack-col-right">
-                        <p class="fragment">Changing data in datepicker event just works.</p>
-                        <p class="fragment">No internal framework knowledge required.</p>
-                    </div>
-                </section>
+                        <div class="hack-col-right">
+                            <p class="fragment">Changing data in datepicker event just works.</p>
+                            <p class="fragment">No internal framework knowledge required.</p>
+                        </div>
+                    </section>
 
-                <section data-state="ang-dir">
-                    <h2>Custom Element: Update</h2>
-                    <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
+                    <section data-state="ang-dir">
+                        <h2>Custom Element: Update</h2>
+                        <pre class="presentation-code hack-col-left"><code class="hljs" data-trim>
 export class DatePicker {
 	@bindable data;
 	...
@@ -1292,98 +1293,98 @@ export class DatePicker {
 
 }
 					</code></pre>
-                    <div class="hack-col-right">
-                        <p class="fragment">xxxChanged method called for changes to bindable properties.</p>
-                        <p class="fragment">
-                            <code>this.data</code> automatically populated with <code>newVal</code>. <a href="https://github.com/danielabar/aurelia-pluralsight/blob/master/movies-client/public/components/datepicker.js">Full example</a>
-                        </p>
-                    </div>
-                </section>
+                        <div class="hack-col-right">
+                            <p class="fragment">xxxChanged method called for changes to bindable properties.</p>
+                            <p class="fragment">
+                                <code>this.data</code> automatically populated with <code>newVal</code>. <a href="https://github.com/danielabar/aurelia-pluralsight/blob/master/movies-client/public/components/datepicker.js">Full example</a>
+                            </p>
+                        </div>
+                    </section>
 
-                <section data-state="scope-parent">
-                    <h2>Angular Inheritance</h2>
-                    <p>Components can access their parent via <code>$scope</code>.</p>
-                    <p class="fragment">Prevents re-use and leads to hard to track down bugs due to <span class="emphasis">prototypal inheritance.</span></p>
-                    <div class="fragment pen-wrapper">
-                        <p data-height="350" data-theme-id="0" data-slug-hash="pgxYVL" data-default-tab="html" data-user="danielabar" class='codepen'>See the Pen <a href='http://codepen.io/danielabar/pen/pgxYVL/'>Angular Demo Parent Child Madness</a>                            by Daniela Baron (<a href='http://codepen.io/danielabar'>@danielabar</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-                        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-                    </div>
-                </section>
+                    <section data-state="scope-parent">
+                        <h2>Angular Inheritance</h2>
+                        <p>Components can access their parent via <code>$scope</code>.</p>
+                        <p class="fragment">Prevents re-use and leads to hard to track down bugs due to <span class="emphasis">prototypal inheritance.</span></p>
+                        <div class="fragment pen-wrapper">
+                            <p data-height="350" data-theme-id="0" data-slug-hash="pgxYVL" data-default-tab="html" data-user="danielabar" class='codepen'>See the Pen <a href='http://codepen.io/danielabar/pen/pgxYVL/'>Angular Demo Parent Child Madness</a>                                by Daniela Baron (<a href='http://codepen.io/danielabar'>@danielabar</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                            <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                        </div>
+                    </section>
 
-                <section data-state="scope-parent">
-                    <h3>Aurelia Inheritance</h3>
-                    <p>By default, components can not access their parent.</p>
-                    <p class="fragment">Can be configured if needed:</p>
-                    <pre class="fragment presentation-code"><code class="hljs" data-trim>
+                    <section data-state="scope-parent">
+                        <h3>Aurelia Inheritance</h3>
+                        <p>By default, components can not access their parent.</p>
+                        <p class="fragment">Can be configured if needed:</p>
+                        <pre class="fragment presentation-code"><code class="hljs" data-trim>
 export class ChildViewModel {
   bind(bindingContext) {
     this.$parent = bindingContext;
   }
 }
 					</code></pre>
-                    <p class="fragment">Even better, use <code>EventAggregator</code> or <code>PropertyObserver</code> for component communication.</p>
+                        <p class="fragment">Even better, use <code>EventAggregator</code> or <code>PropertyObserver</code> for component communication.</p>
+                    </section>
+
+                    <section data-state="angular-compare-summary">
+                        <h2>Summary</h2>
+                        <table>
+                            <tr>
+                                <th><img src="images/aurelia-logo.png" alt="Aurelia logo"></th>
+                                <th><img src="images/angular-logo-light.png" alt="Angular logo"></th>
+                            </tr>
+                            <tr class="fragment">
+                                <td>Conventions</td>
+                                <td>Configuration</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>Web standards</td>
+                                <td>&ldquo;The Angular Way&rdquo;</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>Simple DOM manipulation</td>
+                                <td>Directives are difficult</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>Data binding just works</td>
+                                <td>Leaky abstractions</td>
+                            </tr>
+                            <tr class="fragment">
+                                <td>View and Component lifecycle</td>
+                                <td>Kind of, but unclear</td>
+                            </tr>
+                        </table>
+                    </section>
                 </section>
 
-                <section data-state="angular-compare-summary">
-                    <h2>Summary</h2>
-                    <table>
-                        <tr>
-                            <th><img src="images/aurelia-logo.png" alt="Aurelia logo"></th>
-                            <th><img src="images/angular-logo-light.png" alt="Angular logo"></th>
-                        </tr>
-                        <tr class="fragment">
-                            <td>Conventions</td>
-                            <td>Configuration</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td>Web standards</td>
-                            <td>&ldquo;The Angular Way&rdquo;</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td>Simple DOM manipulation</td>
-                            <td>Directives are difficult</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td>Data binding just works</td>
-                            <td>Leaky abstractions</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td>View and Component lifecycle</td>
-                            <td>Kind of, but unclear</td>
-                        </tr>
-                    </table>
-                </section>
-            </section>
+                <!-- END Daniela: Aurelia vs Angular -->
 
-            <!-- END Daniela: Aurelia vs Angular -->
-
-            <!-- BEGIN Kent: Aurelia vs React -->
-            <section>
-                <h2 style="color:grey">Why this Talk </h2>
-                <hr>
-                <h2 style="color:grey">Learn ES2015, Quickly</h2>
-                <hr>
-                <h2 style="color:grey">Aurelia Overview</h2>
-                <hr>
-                <h2>Framework Comparisons</h2>
-            </section>
-            <section>
-                <section data-transition="fade" data-state="subsection-start" data-background="images/stick-fight.gif" data-background-size="80%">
-                    <h2>Aurelia vs. React</h2>
+                <!-- BEGIN Kent: Aurelia vs React -->
+                <section>
+                    <h2 style="color:grey">Why this Talk </h2>
+                    <hr>
+                    <h2 style="color:grey">Learn ES2015, Quickly</h2>
+                    <hr>
+                    <h2 style="color:grey">Aurelia Overview</h2>
+                    <hr>
+                    <h2>Framework Comparisons</h2>
                 </section>
                 <section>
-                    <h2>React is not a framework</h2>
-                    <p class="fragment">It's just a view layer</p>
-                    <p class="fragment">You have to provide everything else</p>
-                    <p class="fragment">That means lots of freedom but also lots of inconsistency</p>
-                </section>
-                <section>
-                    <h2>Aurelia gives you freedom, too</h2>
-                    <p class="fragment">It provides lots of modules but lets you pick the ones you want to use</p>
-                </section>
-                <section>
-                    <h2>JSX</h2>
-                    <pre class="presentation-code hljs jsx">
+                    <section data-transition="fade" data-state="subsection-start" data-background="images/stick-fight.gif" data-background-size="80%">
+                        <h2>Aurelia vs. React</h2>
+                    </section>
+                    <section>
+                        <h2>React is not a framework</h2>
+                        <p class="fragment">It's just a view layer</p>
+                        <p class="fragment">You have to provide everything else</p>
+                        <p class="fragment">That means lots of freedom but also lots of inconsistency</p>
+                    </section>
+                    <section>
+                        <h2>Aurelia gives you freedom, too</h2>
+                        <p class="fragment">It provides lots of modules but lets you pick the ones you want to use</p>
+                    </section>
+                    <section>
+                        <h2>JSX</h2>
+                        <pre class="presentation-code hljs jsx">
 <span class="hljs-keyword">class</span> <span class="hljs-title">WelcomeBox</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> {
   render() {
     <span class="hljs-keyword">let</span> <span class="hljs-comment">divStyle</span> = { color: <span class="hljs-keyword">this</span>.props.color };
@@ -1399,125 +1400,125 @@ export class ChildViewModel {
   &lt;<span class="hljs-string">WelcomeBox</span> <span class="hljs-literal">name</span>="Hodor" <span class="hljs-literal">color</span>="firebrick"/&gt;,
   <span class="hljs-keyword">document</span>.getElementById(<span class="hljs-symbol">'welcome'</span>)
 );</pre>
+                    </section>
+                    <section>
+                        <h2>Reactions to JSX Vary</h2>
+                        <div class="react-showdown">
+                            <img src="images/i-love-it.gif" class="fragment">
+                            <img src="images/i-dont-want-to-live-on-this-planet-anymore.png" class="fragment">
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Opinions aside,<br>one fact remains</h2>
+                        <img class="fragment" src="images/sean.gif" alt="It's not JavaScript!">
+                        <p class="fragment">In other words, you're locked in</p>
+                    </section>
+                    <section>
+                        <h2>That's not a concern with Aurelia</h2>
+                        <img class="fragment" src="images/michael.gif" alt="It's just JavaScript!">
+                    </section>
+                    <section>
+                        <h2>State Management in React</h2>
+                        <ul>
+                            <li class="fragment">Flux</li>
+                            <li class="fragment">Redux</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Flux: Unidirectional Data Flow</h2>
+                        <img src="images/flux.png" alt="Flux">
+                    </section>
+                    <section>
+                        <h2>Redux: Three Principles</h2>
+                        <ul>
+                            <li class="fragment">Single source of truth</li>
+                            <li class="fragment">State is read-only</li>
+                            <li class="fragment">Changes are made with pure functions</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Aurelia doesn't dictate how your data should flow</h2>
+                        <p class="fragment">It does, however, provide sensible binding defaults and powerful mechanisms like propertyObserver.</p>
+                    </section>
+                    <section>
+                        <h2>Aurelia plays well with others</h2>
+                        <div class="fragment">
+                            <p>You can use it with React, Flux or Redux</p>
+                            <img src="images/friends-banana.jpg">
+                        </div>
+                    </section>
                 </section>
-                <section>
-                    <h2>Reactions to JSX Vary</h2>
-                    <div class="react-showdown">
-                        <img src="images/i-love-it.gif" class="fragment">
-                        <img src="images/i-dont-want-to-live-on-this-planet-anymore.png" class="fragment">
-                    </div>
-                </section>
-                <section>
-                    <h2>Opinions aside,<br>one fact remains</h2>
-                    <img class="fragment" src="images/sean.gif" alt="It's not JavaScript!">
-                    <p class="fragment">In other words, you're locked in</p>
-                </section>
-                <section>
-                    <h2>That's not a concern with Aurelia</h2>
-                    <img class="fragment" src="images/michael.gif" alt="It's just JavaScript!">
-                </section>
-                <section>
-                    <h2>State Management in React</h2>
-                    <ul>
-                        <li class="fragment">Flux</li>
-                        <li class="fragment">Redux</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Flux: Unidirectional Data Flow</h2>
-                    <img src="images/flux.png" alt="Flux">
-                </section>
-                <section>
-                    <h2>Redux: Three Principles</h2>
-                    <ul>
-                        <li class="fragment">Single source of truth</li>
-                        <li class="fragment">State is read-only</li>
-                        <li class="fragment">Changes are made with pure functions</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Aurelia doesn't dictate how your data should flow</h2>
-                    <p class="fragment">It does, however, provide sensible binding defaults and powerful mechanisms like propertyObserver.</p>
-                </section>
-                <section>
-                    <h2>Aurelia plays well with others</h2>
-                    <div class="fragment">
-                        <p>You can use it with React, Flux or Redux</p>
-                        <img src="images/friends-banana.jpg">
-                    </div>
-                </section>
-            </section>
-            <!-- END Kent: Aurelia vs React -->
+                <!-- END Kent: Aurelia vs React -->
 
-            <!-- BEGIN Mike: Aurelia vs Ember -->
-            <section>
-                <h2 style="color:grey">Why this Talk </h2>
-                <hr>
-                <h2 style="color:grey">Learn ES2015, Quickly</h2>
-                <hr>
-                <h2 style="color:grey">Aurelia Overview</h2>
-                <hr>
-                <h2>Framework Comparisons</h2>
-            </section>
-            <section>
-                <section data-transition="fade" data-state="subsection-start" data-background="images/mr-burns.gif" data-background-size="80%">
-                    <h2>Aurelia vs. Ember</h2>
-                    <p>
-                        Same goals, different approach.
-                    </p>
-                    <aside class="notes">
-                        <p>
-                            Conceptually, they support the same ideas/goals:
-                        </p>
-                        <ul>
-                            <li>
-                                Routing
-                            </li>
-                            <li>
-                                Components
-                            </li>
-                            <li>
-                                Dependency injection
-                            </li>
-                        </ul>
-                        <p>
-                            Aurelia has the advantage that it doesn't have any "legacy" versions to support, and no backwards compatibility to worry
-                            about. It was designed up-front to use ES6, instead of migrating to ES6 over time.
-                        </p>
-                    </aside>
+                <!-- BEGIN Mike: Aurelia vs Ember -->
+                <section>
+                    <h2 style="color:grey">Why this Talk </h2>
+                    <hr>
+                    <h2 style="color:grey">Learn ES2015, Quickly</h2>
+                    <hr>
+                    <h2 style="color:grey">Aurelia Overview</h2>
+                    <hr>
+                    <h2>Framework Comparisons</h2>
                 </section>
                 <section>
-                    <h2>Ember-isms</h2>
-                    <p>
-                        Using Ember means using Ember.
-                    </p>
-                    <aside class="notes">
+                    <section data-transition="fade" data-state="subsection-start" data-background="images/mr-burns.gif" data-background-size="80%">
+                        <h2>Aurelia vs. Ember</h2>
                         <p>
-                            Much like Angular or React, when you use Ember, you are forever using Ember. There is no easy way to switch to another framework,
-                            since you are consuming/extending very specific Ember items.
+                            Same goals, different approach.
                         </p>
+                        <aside class="notes">
+                            <p>
+                                Conceptually, they support the same ideas/goals:
+                            </p>
+                            <ul>
+                                <li>
+                                    Routing
+                                </li>
+                                <li>
+                                    Components
+                                </li>
+                                <li>
+                                    Dependency injection
+                                </li>
+                            </ul>
+                            <p>
+                                Aurelia has the advantage that it doesn't have any "legacy" versions to support, and no backwards compatibility to worry
+                                about. It was designed up-front to use ES6, instead of migrating to ES6 over time.
+                            </p>
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Ember-isms</h2>
                         <p>
-                            Things to remember when using Ember:
+                            Using Ember means using Ember.
                         </p>
-                        <ul>
-                            <li>
-                                Start using the CLI, to help with adding functionality (not a bad thing, but a thing nonetheless)
-                            </li>
-                            <li>
-                                Using Handlebars for templates (and templates live in a different folder from their source code)
-                            </li>
-                        </ul>
-                        <p>Oh, and that whole "if you use Ember 1.x you get a different experience from using Ember 2.x" thing.
-                            ES6 goodies only come into play with Ember 2.x.</p>
-                    </aside>
-                </section>
-                <section>
-                    <h2>Let's talk routing</h2>
-                    <img width="80%" height="auto" data-src="images/routing.jpg" alt="Routing" style="border: none; background: none; box-shadow: none;">
-                </section>
-                <section>
-                    <h2>Routing (in Ember/ES5)</h2>
-                    <pre class="fragment presentation-code"><code class="hljs" data-trim>
+                        <aside class="notes">
+                            <p>
+                                Much like Angular or React, when you use Ember, you are forever using Ember. There is no easy way to switch to another framework,
+                                since you are consuming/extending very specific Ember items.
+                            </p>
+                            <p>
+                                Things to remember when using Ember:
+                            </p>
+                            <ul>
+                                <li>
+                                    Start using the CLI, to help with adding functionality (not a bad thing, but a thing nonetheless)
+                                </li>
+                                <li>
+                                    Using Handlebars for templates (and templates live in a different folder from their source code)
+                                </li>
+                            </ul>
+                            <p>Oh, and that whole "if you use Ember 1.x you get a different experience from using Ember 2.x"
+                                thing. ES6 goodies only come into play with Ember 2.x.</p>
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Let's talk routing</h2>
+                        <img width="80%" height="auto" data-src="images/routing.jpg" alt="Routing" style="border: none; background: none; box-shadow: none;">
+                    </section>
+                    <section>
+                        <h2>Routing (in Ember/ES5)</h2>
+                        <pre class="fragment presentation-code"><code class="hljs" data-trim>
 Todos.Router.map(function () {
 	this.resource('todos', { path: '/' }, function () {
 		this.route('active');
@@ -1545,10 +1546,10 @@ Todos.TodosCompletedRoute = Todos.TodosIndexRoute.extend({
 });
 							</code>
 						</pre>
-                </section>
-                <section>
-                    <h2>Routing (in Ember/ES6)</h2>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2>Routing (in Ember/ES6)</h2>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 import Ember from 'ember';
 import config from './config/environment';
 
@@ -1565,14 +1566,14 @@ Router.map(function() {
 
 export default Router;
 						</code></pre>
-                    <aside class="notes">
-                        <p>ES6 makes Ember nicer, but still lots of verbocity.</p>
-                        <p>Each route has a separate module under <code>/routes/</code> where more code lives.</p>
-                    </aside>
-                </section>
-                <section>
-                    <h2>Routing (in Aurelia)</h2>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                        <aside class="notes">
+                            <p>ES6 makes Ember nicer, but still lots of verbocity.</p>
+                            <p>Each route has a separate module under <code>/routes/</code> where more code lives.</p>
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Routing (in Aurelia)</h2>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 export class App {
 	constructor() {
 		// whatever you want
@@ -1594,21 +1595,21 @@ export class App {
 						</code>
                        
                         </pre>
-                    <aside class="notes">
-                        <p>Routes typically wired in as part of the app initialization.</p>
-                        <p>The route's <code>moduleId</code> references an ES6 class.</p>
-                    </aside>
-                </section>
-                <section>
-                    <h2>Components (in Ember)</h2>
-                    <p>
-                        <img width="50%" height="auto" data-src="images/ember-component-lifecycle.png" alt="Routing" style="border: none; background: none; box-shadow: none;">
-                    </p>
-                    <h1>THIS.</h1>
-                </section>
-                <section>
-                    <h2>Components (in Aurelia)</h2>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                        <aside class="notes">
+                            <p>Routes typically wired in as part of the app initialization.</p>
+                            <p>The route's <code>moduleId</code> references an ES6 class.</p>
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Components (in Ember)</h2>
+                        <p>
+                            <img width="50%" height="auto" data-src="images/ember-component-lifecycle.png" alt="Routing" style="border: none; background: none; box-shadow: none;">
+                        </p>
+                        <h1>THIS.</h1>
+                    </section>
+                    <section>
+                        <h2>Components (in Aurelia)</h2>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 export class Welcome {
   constructor() {
     this.firstName = 'John';
@@ -1626,10 +1627,10 @@ export class Welcome {
   }
 }
 						</code></pre>
-                </section>
-                <section>
-                    <h2>Components (in Aurelia)</h2>
-                    <pre class="presentation-code"><code class="hljs" data-trim>
+                    </section>
+                    <section>
+                        <h2>Components (in Aurelia)</h2>
+                        <pre class="presentation-code"><code class="hljs" data-trim>
 <template>
   <form role="form" submit.delegate="submit()">
     <input type="text" value.bind="firstName" placeholder="first name">
@@ -1639,180 +1640,180 @@ export class Welcome {
   </form>
 </template>
 						</code></pre>
+                    </section>
+                    <section>
+                        <h2>Dependency Injection (in Ember)</h2>
+                        <img width="50%" height="auto" data-src="images/which-way.jpg" alt="Which Way" style="border: none; background: none; box-shadow: none;">
+                        <aside class="notes">
+                            <ul>
+                                <li>
+                                    create a file that exports a function and a default object; the function is called with an application parameter that is
+                                    used to register the factory. The factory itself has to extend Ember.Object if you want
+                                    Ember to instantiate the factory for you. The default object is used to tell the app,
+                                    again, how to access the factory. You then choose to register it as a singleton, or not
+                                    - the latter seems kind of pointless from the DI perspective, but hey.
+                                </li>
+                                <li>
+                                    You can then use application.inject to tell Ember to ensure that whenever a specific factory is instantiated that it has
+                                    to wire in your new factory. In the other factory, you can now call 'this.get('injfectedFactory')'
+                                    by name to get it. No idea how it gets there, though.
+                                </li>
+                                <li>
+                                    Or, you can do an ad hoc injection via Ember.inject.service - again, by name.
+                                </li>
+                                <li>
+                                    Or... wait for it... You can use applicationInstance.lookup
+                                </li>s
+                                <li>
+                                    reiterate the ease of aurelia - DI to inject a singleton, otherwise directly reference the ES2015 class directly.
+                                </li>
+                            </ul>
+                        </aside>
+                    </section>
                 </section>
-                <section>
-                    <h2>Dependency Injection (in Ember)</h2>
-                    <img width="50%" height="auto" data-src="images/which-way.jpg" alt="Which Way" style="border: none; background: none; box-shadow: none;">
-                    <aside class="notes">
-                        <ul>
-                            <li>
-                                create a file that exports a function and a default object; the function is called with an application parameter that is
-                                used to register the factory. The factory itself has to extend Ember.Object if you want Ember
-                                to instantiate the factory for you. The default object is used to tell the app, again, how
-                                to access the factory. You then choose to register it as a singleton, or not - the latter
-                                seems kind of pointless from the DI perspective, but hey.
-                            </li>
-                            <li>
-                                You can then use application.inject to tell Ember to ensure that whenever a specific factory is instantiated that it has
-                                to wire in your new factory. In the other factory, you can now call 'this.get('injfectedFactory')'
-                                by name to get it. No idea how it gets there, though.
-                            </li>
-                            <li>
-                                Or, you can do an ad hoc injection via Ember.inject.service - again, by name.
-                            </li>
-                            <li>
-                                Or... wait for it... You can use applicationInstance.lookup
-                            </li>s
-                            <li>
-                                reiterate the ease of aurelia - DI to inject a singleton, otherwise directly reference the ES2015 class directly.
-                            </li>
-                        </ul>
-                    </aside>
-                </section>
-            </section>
-            <!-- END Mike: Aurelia vs Ember -->
+                <!-- END Mike: Aurelia vs Ember -->
 
-            <!-- BEGIN Daniela: Gotchas -->
-            <section data-transition="convex">
-                <section data-transition="fade" data-state="subsection-start" data-background="images/gotchas.gif" data-background-size="80%">
-                    <h2 class="extra-large">Gotchas</h2>
-                </section>
-                <section>
-                    <h2>It's new...</h2>
-                    <ul>
-                        <li class="fragment">Still in beta &rarr; moving target</li>
-                        <li class="fragment">Documentation is a work in progress</li>
-                        <li class="fragment">Not a lot of Q &amp; A on Stack Overflow</li>
-                        <li class="fragment">
-                            <div>JSPM is new and quirky (recommended package manager and module loader)</div>
-                            <small>
+                <!-- BEGIN Daniela: Gotchas -->
+                <section data-transition="convex">
+                    <section data-transition="fade" data-state="subsection-start" data-background="images/gotchas.gif" data-background-size="80%">
+                        <h2 class="extra-large">Gotchas</h2>
+                    </section>
+                    <section>
+                        <h2>It's new...</h2>
+                        <ul>
+                            <li class="fragment">Still in beta &rarr; moving target</li>
+                            <li class="fragment">Documentation is a work in progress</li>
+                            <li class="fragment">Not a lot of Q &amp; A on Stack Overflow</li>
+                            <li class="fragment">
+                                <div>JSPM is new and quirky (recommended package manager and module loader)</div>
+                                <small>
 									<ul>
 										<li>JSPM link and associated transitive dependencies are flakey</li>
 										<li>Implicitly pulls in all transitive dependencies</li>
 									</ul>
 								</small>
-                        </li>
-                        <li class="fragment">Bundling and optimization still needs work</li>
+                            </li>
+                            <li class="fragment">Bundling and optimization still needs work</li>
+                        </ul>
+                    </section>
+                </section>
+                <!-- END Daniela: Aurelia Overview -->
+                <!-- BEGIN JRT: Aurelia Refs -->
+                <section>
+                    <h2 style="color:grey">Github-Large representation</h2>
+                    <hr>
+                    <h2 style="color:grey">plnkr-fair amount</h2>
+                    <hr>
+                    <h2 style="color:grey">gitter-very active</h2>
+                    <ul>
+                        <li>https://gitter.im/Aurelia/Discuss</li>
+                        <li>https://gitter.im/adriatic/Aurelia-KendoUI</li>
                     </ul>
-                </section>
-            </section>
-            <!-- END Daniela: Aurelia Overview -->
-            <!-- BEGIN JRT: Aurelia Refs -->
-            <section>
-                <h2 style="color:grey">Github-Large representation</h2>
-                <hr>
-                <h2 style="color:grey">plnkr-fair amount</h2>
-                <hr>
-                <h2 style="color:grey">gitter-very active</h2>
-                <ul>
-                    <li>https://gitter.im/Aurelia/Discuss</li>
-                    <li>https://gitter.im/adriatic/Aurelia-KendoUI</li>
-                </ul>
-                <h2 style="color:grey">Materializecss / Kendo-ui Repos</h2>
-
-            </section>
-            <section>
-                <section data-transition="fade" data-state="subsection-start" data-background="images/stick-fight.gif" data-background-size="80%">
-                    <h2>Github</h2>
-                </section>
-                <section>
-                    <h2>Ref1</h2>
-                    <li> https://github.com/voidberg/awesome-aurelia</li>
-                    <li> http://aurelia.io/</li>
-                    <li>https://github.com/aurelia/skeleton-navigation</li>
-                    <li>https://github.com/jdanyow/aurelia-breeze-northwind</li>
-                    <li>https://github.com/CharlesPockert/aurelia-bs-grid</li>
-                    <li>https://github.com/manuel-guilbault/aurelia-materialize</li>
-                    <li>https://github.com/aurelia-ui-toolkits</li>
-                    <li>https://github.com/jdanyow/aurelia-converters-sample</li>
-                    <li>https://github.com/Vheissu?tab=repositories</li>
-                    <li>http://jdanyow.github.io/aurelia-examples/</li>
-                    <li>https://gist.github.com/RobertDiebels/f5f76b874bd8ecfe1e9b</li>
-                    <li>https://github.com/PWKad/au-ps-comparison</li>
-
-
+                    <h2 style="color:grey">Materializecss / Kendo-ui Repos</h2>
 
                 </section>
                 <section>
-                    <h2>Ref2</h2>
+                    <section data-transition="fade" data-state="subsection-start" data-background="images/stick-fight.gif" data-background-size="80%">
+                        <h2>Github</h2>
+                    </section>
+                    <section>
+                        <h2>Ref1</h2>
+                        <li> https://github.com/voidberg/awesome-aurelia</li>
+                        <li> http://aurelia.io/</li>
+                        <li>https://github.com/aurelia/skeleton-navigation</li>
+                        <li>https://github.com/jdanyow/aurelia-breeze-northwind</li>
+                        <li>https://github.com/CharlesPockert/aurelia-bs-grid</li>
+                        <li>https://github.com/manuel-guilbault/aurelia-materialize</li>
+                        <li>https://github.com/aurelia-ui-toolkits</li>
+                        <li>https://github.com/jdanyow/aurelia-converters-sample</li>
+                        <li>https://github.com/Vheissu?tab=repositories</li>
+                        <li>http://jdanyow.github.io/aurelia-examples/</li>
+                        <li>https://gist.github.com/RobertDiebels/f5f76b874bd8ecfe1e9b</li>
+                        <li>https://github.com/PWKad/au-ps-comparison</li>
 
 
-                    <li>https://github.com/PWKad/aurelia-bs-modal</li>
-                    <li>https://github.com/PWKad/aurelia-samples/tree/master/src</li>
-                    <li>https://github.com/joelcoxokc/aurelia-interface</li>
-                    <li>https://github.com/colinsr/Aurelia/tree/master/src</li>
-                    <li>https://github.com/aurelia/app-contacts</li>
-                    <li>https://github.com/sitepoint-editors/aurelia-reddit-client</li>
-                    <li>https://github.com/aurelia/skeleton-plugin</li>
-                    <li>http://jdanyow.github.io/aurelia-examples/</li>
-                    <li> http://blog.philiphendry.me.uk/</li>
+
+                    </section>
+                    <section>
+                        <h2>Ref2</h2>
+
+
+                        <li>https://github.com/PWKad/aurelia-bs-modal</li>
+                        <li>https://github.com/PWKad/aurelia-samples/tree/master/src</li>
+                        <li>https://github.com/joelcoxokc/aurelia-interface</li>
+                        <li>https://github.com/colinsr/Aurelia/tree/master/src</li>
+                        <li>https://github.com/aurelia/app-contacts</li>
+                        <li>https://github.com/sitepoint-editors/aurelia-reddit-client</li>
+                        <li>https://github.com/aurelia/skeleton-plugin</li>
+                        <li>http://jdanyow.github.io/aurelia-examples/</li>
+                        <li> http://blog.philiphendry.me.uk/</li>
+
+
+                    </section>
+
+                    <section>
+                        <h2>Ref3</h2>
+                        <li>http://jdanyow.github.io/aurelia-converters-sample/</li>
+                        <li>http://charlespockert.github.io/aurelia-grid/#/</li>
+                        <li>https://github.com/PWKad/aurelia-samples</li>
+                        <li>https://github.com/jdanyow/aurelia-converters-sample</li>
+                        <li>https://github.com/Mordred/aurelia-sails-socket-client</li>
+                        <li>https://github.com/martingust/virtual-list</li>
+                        <li>https://github.com/paulvanbladel/aureliauth</li>
+                        <li>https://github.com/mhoyer/todomvc-aurelia</li>
+                        <li>https://github.com/stamp-web/stamp-web-aurelia</li>
+
+
+                    </section>
+                    <section>
+                        <h2>Ref4</h2>
+                        <li>https://github.com/chenkie/aurelia-jwt-auth</li>
+                        <li>https://github.com/stevies/aurelia-starter-kit</li>
+                        <li>https://github.com/Mordred/aurelia-sails-socket-client/tree/master/example</li>
+                        <li>https://github.com/Reactive-Extensions/RxJS</li>
+                        <li>https://github.com/cmichaelgraham/aurelia-typescript#multi-level-menu</li>
+                        <li>https://github.com/Vheissu/Aurelia-Code-Snippets</li>
+                        <li>https://github.com/ahmedshuhel/aurelia-meteor</li>
+                        <li>https://github.com/ahmedshuhel/aurelia-skeleton-meteor</li>
+
+                    </section>
+
+                    <section>
+                        <h2>Ref5</h2>
+                        <li>https://github.com/danielabar/aurelia-presentation</li>
+                        <li>https://github.com/johntom/aurelia-presentation</li>
+                        <li> https://slides.com/pricing?h=1</li>
+
+
+                        <li>NG vs Aurelia</li>
+                        <li>http://blog.ae.be/comparing-angular-aurelia-react-js-framework/</li>
+                        <li>http://www.meetup.com/AngularJS-NYC/events/229416369/</li>
+
+
+                    </section>
+                    <section>
+                        <h2>Credits</h2>
+                        <li>https://gifs.com/</li>
+                        <li>http://slidedeck.io/danielabar/aurelia-presentations</li>
+                        <li>https://github.com/hakimel/reveal.js/</li>
+
+
+
+
+                    </section>
 
 
                 </section>
+                <!-- END JRT: Aurelia Refs -->
 
-                <section>
-                    <h2>Ref3</h2>
-                    <li>http://jdanyow.github.io/aurelia-converters-sample/</li>
-                    <li>http://charlespockert.github.io/aurelia-grid/#/</li>
-                    <li>https://github.com/PWKad/aurelia-samples</li>
-                    <li>https://github.com/jdanyow/aurelia-converters-sample</li>
-                    <li>https://github.com/Mordred/aurelia-sails-socket-client</li>
-                    <li>https://github.com/martingust/virtual-list</li>
-                    <li>https://github.com/paulvanbladel/aureliauth</li>
-                    <li>https://github.com/mhoyer/todomvc-aurelia</li>
-                    <li>https://github.com/stamp-web/stamp-web-aurelia</li>
-
-
-                </section>
-                <section>
-                    <h2>Ref4</h2>
-                    <li>https://github.com/chenkie/aurelia-jwt-auth</li>
-                    <li>https://github.com/stevies/aurelia-starter-kit</li>
-                    <li>https://github.com/Mordred/aurelia-sails-socket-client/tree/master/example</li>
-                    <li>https://github.com/Reactive-Extensions/RxJS</li>
-                    <li>https://github.com/cmichaelgraham/aurelia-typescript#multi-level-menu</li>
-                    <li>https://github.com/Vheissu/Aurelia-Code-Snippets</li>
-                    <li>https://github.com/ahmedshuhel/aurelia-meteor</li>
-                    <li>https://github.com/ahmedshuhel/aurelia-skeleton-meteor</li>
-
-                </section>
-
-                <section>
-                    <h2>Ref5</h2>
-                    <li>https://github.com/danielabar/aurelia-presentation</li>
-                    <li>https://github.com/johntom/aurelia-presentation</li>
-                    <li> https://slides.com/pricing?h=1</li>
-
-
-                    <li>NG vs Aurelia</li>
-                    <li>http://blog.ae.be/comparing-angular-aurelia-react-js-framework/</li>
-                    <li>http://www.meetup.com/AngularJS-NYC/events/229416369/</li>
-
-
-                </section>
-                <section>
-                    <h2>Credits</h2>
-                    <li>https://gifs.com/</li>
-                    <li>http://slidedeck.io/danielabar/aurelia-presentations</li>
-                    <li>https://github.com/hakimel/reveal.js/</li>
-
-
-
-
-                </section>
-
-
-            </section>
-            <!-- END JRT: Aurelia Refs -->
-
-            <section data-transition="convex">
-                <section data-transition="fade" data-state="subsection-start" data-background="images/panda.jpg" data-background-size="80%">
-                    <h2 class="extra-large">What's Next?</h2>
-                </section>
-                <section>
-                    <h4>Take-away  There is no such thing as the Last Stack!</h4>
-                    <h4>Version 1 is coming soon and it's worth a view you figure out if Aurelia is right for you!</h4>
-                    <h4> Examples</li>
+                <section data-transition="convex">
+                    <section data-transition="fade" data-state="subsection-start" data-background="images/panda.jpg" data-background-size="80%">
+                        <h2 class="extra-large">What's Next?</h2>
+                    </section>
+                    <section>
+                        <h4>Take-away  There is no such thing as the Last Stack!</h4>
+                        <h4>Version 1 is coming soon and it's worth a view you figure out if Aurelia is right for you!</h4>
+                        <h4> Examples</li>
          <li> http://www.brookbridgeinc.com</li>
          <li> http://gallery.meledandri.com</li>
          <li> http://www.gtz.com:9020</li>
